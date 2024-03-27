@@ -1,0 +1,19 @@
+Briefly explain the vulnerability and why the secure version prevents the vulnerability.
+
+Privilege escalation occurs when a user or process gains unauthorized access to resources or capabilities 
+that are normally restricted. This vulnerability can arise due to software flaws, misconfigurations, or
+insufficient access controls, allowing attackers to elevate their privileges and perform actions beyond their 
+regular permissions. The secure version prevents this vulnerability by enforcing the principle of least privilege, 
+regularly updating and patching systems, and monitoring for unusual activities that could indicate attempts at privilege 
+escalation. Implementing role-based access controls (RBAC) and ensuring that users and processes operate with the minimum 
+level of rights necessary for their tasks are key strategies to mitigate this risk.
+
+
+What additional security mechanisms can you incorporate to prevent such attacks?
+
+To prevent privilege escalation attacks, additional security mechanisms that can be incorporated include:
+Multi-factor authentication (MFA): Requires users to verify their identity using two or more authentication methods before granting access, adding an extra layer of security.
+Regular system and application patching: Keeping software up to date with the latest patches can fix vulnerabilities that might be exploited for privilege escalation.
+Audit logs and monitoring: Keeping detailed logs and actively monitoring for suspicious activities can help detect and respond to privilege escalation attempts promptly.
+Separation of duties: Dividing critical functions among different users or teams to reduce the risk of a single point of compromise.
+Security training and awareness: Educating employees about the risks and indicators of privilege escalation can help prevent successful attacks.

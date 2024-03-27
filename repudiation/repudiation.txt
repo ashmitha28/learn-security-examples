@@ -1,2 +1,16 @@
 - Briefly explain the vulnerability and why the secure version is better at preventing repudiation than the insecure version.
-- What additional security mechanisms can you incorporate to prevent such attacks?
+Repudiation refers to the denial by a user of having performed a specific action in a system, which can be problematic when 
+there is no way to prove otherwise. Insecure systems may lack the necessary audit trails and logging mechanisms to track user
+ actions accurately. This lack of accountability can lead to security breaches going undetected or unresolved.
+  The secure version is better at preventing repudiation by implementing comprehensive logging and monitoring, 
+  digital signatures, and non-repudiation services. These mechanisms ensure that actions taken within the system can be 
+  attributed to the individual users, making it difficult for them to deny their activities.
+
+
+What additional security mechanisms can you incorporate to prevent such attacks?
+
+To prevent repudiation attacks, additional security mechanisms that can be incorporated include:
+Digital Signatures: Ensure the authenticity and integrity of communications, making it possible to verify that a message or document has not been altered and actually comes from the purported sender.
+Audit Trails: Detailed logs of all user activities can help trace actions back to the responsible parties.
+Non-Repudiation Services: These services, including the use of certificates and timestamps, can provide proof of the origin and integrity of data, making it possible to prove the occurrence of a transaction or event.
+Access Controls: Limiting user access to systems and data to only what is necessary for their role can reduce the risk of unauthorized actions being taken.
