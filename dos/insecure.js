@@ -21,7 +21,7 @@ const User = mongoose.model('User', userSchema);
 // Route to authenticate user (VULNERABLE TO NOSQL INJECTION)
 app.get('/userinfo', async (req, res) => {
   const { id } = req.query;
-
+try{
   // Vulnerable code: Directly using user-provided values in the query
   const user = await User.findOne({ _id: id }).exec();
 
@@ -30,8 +30,11 @@ app.get('/userinfo', async (req, res) => {
   } else {
     res.status(401).send('Invalid username or password');
   }
+}
+catch(err){
+  res.status(401).send('Invalid username or password');
+}
 });
-
 // Start the server
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);

@@ -1,3 +1,21 @@
 Briefly explain the vulnerability and why the secure version prevents the vulnerability.
+Information disclosure, often referred to as "information leakage," occurs when sensitive data is exposed to 
+unauthorized individuals or systems. This vulnerability arises due to inadequate access controls, lack of data encryption, 
+or software flaws that allow attackers to access confidential information. The secure version prevents this vulnerability 
+by implementing strict access control measures, encrypting data both in transit and at rest, and regularly auditing the system
+ for potential vulnerabilities. Additionally, employing data masking and minimizing the amount of sensitive information stored 
+ can reduce the risk of unauthorized access.
+
+
 Which CIA property does tampering violate?
+Information disclosure primarily violates the Confidentiality aspect of the CIA (Confidentiality, Integrity, Availability) triad.
+ Confidentiality ensures that sensitive information is accessed only by authorized parties, and when information disclosure 
+ occurs, this principle is breached, leading to potential privacy and security issues.
+
+ 
 What additional security mechanisms can you incorporate?
+To prevent information disclosure, additional security mechanisms that can be incorporated include:
+Data Loss Prevention (DLP) tools: These tools monitor, detect, and block sensitive data from being shared, stored, or transferred outside the organization’s network improperly.
+Regular Security Audits and Vulnerability Assessments: Conducting regular checks to identify and rectify potential vulnerabilities in the system can prevent information leaks.
+Secure Software Development Lifecycle (SDLC): Implementing security best practices throughout the development process can minimize vulnerabilities in the software that could lead to information disclosure.
+User Training and Awareness Programs: Educating employees about the importance of data security and the potential risks of information disclosure can reduce the chances of accidental leaks.

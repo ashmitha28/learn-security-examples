@@ -1,1 +1,14 @@
 Briefly explain the vulnerability and why the secure version prevents the vulnerability.
+Spoofing is a type of cyber attack where the attacker disguises themselves as a trusted source to gain unauthorized 
+access to a system, steal data, or spread malware. This vulnerability exploits the trust relationship between the user 
+and the system. Spoofing can occur in various forms, including IP address spoofing, email spoofing, and website spoofing. 
+The secure version, which includes authentication mechanisms like two-factor authentication (2FA), digital signatures, and 
+certificate authorities, helps prevent spoofing by verifying the identity of the entities involved in the communication, 
+thereby ensuring that the source is genuine and not impersonated.
+
+Which CIA properties do you think Spoofing violates?
+
+Spoofing primarily violates two properties of the CIA (Confidentiality, Integrity, Availability) 
+triad:
+    Integrity: By impersonating a trusted source, attackers can manipulate data or spread false information, thereby compromising the integrity of the information.
+    Authenticity (often considered under Integrity or as a separate element in an extended CIA triad): Spoofing attacks directly target the authenticity of a user or system, as they involve forging the identity of a legitimate source.

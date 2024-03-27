@@ -1,2 +1,15 @@
 - Briefly explain the vulnerability and why the secure version prevents the vulnerability.
+A Distributed Denial of Service (DDoS) attack is a security threat where multiple systems flood the bandwidth 
+or resources of a targeted system, usually one or more web servers, with the intent to overwhelm it and make 
+it unavailable to its intended users. The vulnerability lies in the targeted system’s ability to handle unexpected, 
+massive increases in traffic. The secure version, or a system with DDoS mitigation in place, typically includes rate 
+limiting, traffic analysis, and filtering mechanisms. These measures can differentiate between normal, legitimate 
+traffic and malicious traffic created by a DDoS attack, thereby preventing the service from being overwhelmed.
 - What additional security mechanisms can you incorporate to prevent such attacks?
+To prevent DDoS attacks, additional security mechanisms that can be incorporated include:
+Web Application Firewall (WAF): Inspects incoming traffic to block malicious requests.
+Anomaly Detection: Identifies unusual traffic patterns that may indicate a DDoS attack.
+Scalability: Ensuring the infrastructure can scale rapidly to handle sudden traffic spikes.
+Network Redundancy: Having multiple network paths to distribute traffic evenly and prevent overload.
+Geographical Distribution: Distributing server resources across different locations to dilute the impact of an attack.
+Anti-DDoS services: Subscribing to specialized DDoS protection services that can absorb and mitigate large-scale DDoS traffic.

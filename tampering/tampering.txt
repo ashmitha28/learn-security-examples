@@ -1,0 +1,15 @@
+Briefly explain the vulnerability and why the secure version prevents the vulnerability.
+
+Tampering refers to the unauthorized modification of products, information, or systems. 
+In the context of cybersecurity, it involves altering data, code, or configurations to disrupt services, 
+steal information, or cause harm. The vulnerability lies in insufficient security controls that fail to detect 
+or prevent unauthorized changes. The secure version prevents tampering by implementing strict access controls, 
+integrity checks, and auditing mechanisms. For example, using cryptographic hash functions to verify the integrity 
+of data and employing file integrity monitoring can detect and prevent unauthorized modifications.
+
+
+Which CIA property does tampering violate?
+
+Tampering primarily violates the Integrity aspect of the CIA (Confidentiality, Integrity, Availability) triad. 
+Integrity ensures that information remains accurate, consistent, and trustworthy. When data, software, or configurations 
+are tampered with, their integrity is compromised, leading to potential misinformation, system malfunctions, or security breaches.
